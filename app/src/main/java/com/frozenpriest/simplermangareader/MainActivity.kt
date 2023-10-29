@@ -1,4 +1,4 @@
-package template
+package com.frozenpriest.simplermangareader
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,8 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.ui.graphics.Color
 import androidx.core.view.WindowCompat
+import com.frozenpriest.simplermangareader.theme.MyMaterialTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import template.theme.TemplateTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ConfigureTransparentSystemBars()
 
-            TemplateTheme {
+            MyMaterialTheme {
                 Surface(
                     color = MaterialTheme.colorScheme.background,
                 ) {
